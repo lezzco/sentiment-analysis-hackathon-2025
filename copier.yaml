@@ -1,0 +1,21 @@
+_min_copier_version: "7.0"
+
+team_name:
+  type: str
+  help: "Inserisci il nome del tuo team"
+  default: "team-name-anonymous"
+
+project_name:
+  type: str
+  help: "Nome del progetto"
+  default: "lezzco-{{ team_name }}-hackathon"
+
+author:
+  type: str
+  help: "Nome o nick del team leader"
+  default: "leader-anonymous-group"
+
+use_venv:
+  type: bool
+  help: "Vuoi usare un virtual environment Python?"
+  default: true
