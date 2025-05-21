@@ -5,20 +5,20 @@
 ---
 ## Indice
 
-- [Obiettivo 🏁](#obiettivo-)
+- [Obiettivo 🏁](#-obiettivo)
 - [📥 Fase 1 — Data Ingestion and Dataset Building](#fase-1---data-ingestion-and-dataset-building)
     - [1.1 Schema dataset finale](#1-.-1-schema-dataset-finale)
 - [📥 Fase 2 — Sentiment Analysis](#fase-2---sentiment-analysis)
-    - [🎯 Obiettivo della parte di Sentiment Analysis](#obiettivo-della-parte-di-sentiment-analysis)
-    - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#bonus-estensione-llm-based---generatione-automatica-dei-report)
-- [📦 Cosa Consegnare](#cosa-consegnare)
+    - [🎯 Obiettivo della parte di Sentiment Analysis](#-obiettivo-della-parte-di-sentiment-analysis)
+    - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#-bonus-estensione-llm-based---generatione-automatica-dei-report)
+- [📦 Modalità di consegna](#-modalità-di-consegna)
 - [📜 Metriche di Valutazione e Punteggi](#-metriche-di-valutazione-e-punteggi)
-- [1️⃣ Inizializzazione progetto](#inizializzazione-progetto-)
+- [1️⃣ Inizializzazione progetto](#-inizializzazione-progetto)
 - [🕒 Timeline](#-timeline)
 
 ---
 
-## Obiettivo 🏁 
+## 🏁 Obiettivo 
 
 In occasione del Gran Premio di Monaco 2025, uno degli eventi più iconici e seguiti della Formula 1, il vostro compito è progettare e realizzare un sistema intelligente che recupera, integra e analizza post e commenti provenienti dai social media, per comprendere come gli utenti vivono l’evento prima, durante e dopo la gara, con un focus particolare sul sentiment e sulla geolocalizzazione.
 
@@ -42,9 +42,9 @@ Progettare e implementare una pipeline di data ingestion che:
 
 - 📦 Produce un dataset finale conforme a uno schema comune condiviso da tutti i gruppi (vedi sotto).
 
-### NOTE:
-- Non devono essere inclusi dati personali identificabili  
-- Non violare i ToS dei social: scraping etico o dataset già disponibili
+### 🗒️ NOTE:
+- _Non devono essere inclusi dati personali identificabili_ 
+- _Non violare i ToS dei social: scraping etico o dataset già disponibili_
 
 ---
 
@@ -75,7 +75,7 @@ Progettare e implementare una pipeline di data ingestion che:
 
 Una volta creato un dataset coerente, la sfida si sposta sull'analisi del sentiment. Ecco cosa includere, come strutturare la consegna e cosa valutare.
 
-### Obiettivo della parte di Sentiment Analysis
+### 🎯 Obiettivo della parte di Sentiment Analysis
 
 Analizzare i contenuti raccolti (post/commenti) per comprendere come evolve l’umore e la percezione degli utenti nel tempo e nello spazio in relazione al Gran Premio di Monaco 2025, con un focus sulle fasi prima, durante e dopo la gara.
 
@@ -104,7 +104,7 @@ Questi modelli possono essere interrogati tramite prompt ben costruiti per anali
 
 ---
 
-### Bonus: Estensione LLM-based - Generatione automatica dei report
+### ✨ Bonus: Estensione LLM-based - Generatione automatica dei report
 
 Oltre alla classificazione del sentiment, è incoraggiato l’uso di LLM e modelli multimodali per:  
 
@@ -121,7 +121,7 @@ Esempi di strumenti/approcci:
 
 ---
 
-## Cosa Consegnare
+## 📦 Modalità di consegna
 
 Lista degli artefatti da consegnare:
 
@@ -133,7 +133,24 @@ Lista degli artefatti da consegnare:
 
 ---
 
-## Inizializzazione progetto 1️⃣ 
+## 📜 Metriche di Valutazione e Punteggi
+
+Passiamo alla valutazione della vostra soluzione che avverrà attraverso cinque macro-criteri. 
+
+Ogni aspetto tiene conto non solo della qualità tecnica, ma anche della creatività, dell’efficacia dell’analisi e della chiarezza nella comunicazione dei risultati. 
+Di seguito la griglia di valutazione dettagliata, il punteggio massimo raggiungibile è di **100**:
+
+| Macro-metrica                        | Punteggio massimo | Dettaglio                                                                 |
+|-------------------------------------|-------------------|--------------------------------------------------------------------------|
+| 1. Qualità della soluzione          | 30 pts            | Codice pulito, automazione, modularità, riusabilità                      |
+| 2. Creatività della soluzione       | 20 pts            | Idee originali, approcci inediti, uso creativo di tool/LLM              |
+| 3. Completezza del dato             | 20 pts            | Aderenza allo schema, qualità e copertura dei dati                      |
+| 4. Efficacia dell’analisi di sentiment | 15 pts         | Accuratezza, rilevanza, originalità delle intuizioni                    |
+| 5. Output e comunicazione (report, grafici, doc) | 15 pts | Chiarezza, presentazione, comprensibilità per non esperti               |
+
+---
+
+## 1️⃣ Inizializzazione progetto 
 
 Ogni team deve creare una propria repository GitHub a partire da un template ufficiale fornito dall’organizzazione. Tutti i team lavoreranno sulla stessa struttura di base per garantire ordine, coerenza e facilità di valutazione.
 
@@ -163,22 +180,6 @@ Per partecipare all’hackathon, ogni team deve prima creare una propria reposit
 **Adesso avete questo template sulla vostra repository e potete iniziare!**
 
 ---
-
-## 📜 Metriche di Valutazione e Punteggi
-
-Passiamo alla valutazione della vostra soluzione che avverrà attraverso cinque macro-criteri. 
-
-Ogni aspetto tiene conto non solo della qualità tecnica, ma anche della creatività, dell’efficacia dell’analisi e della chiarezza nella comunicazione dei risultati. 
-Di seguito la griglia di valutazione dettagliata, il punteggio massimo raggiungibile è di **100**:
-
-| Macro-metrica                        | Punteggio massimo | Dettaglio                                                                 |
-|-------------------------------------|-------------------|--------------------------------------------------------------------------|
-| 1. Qualità della soluzione          | 30 pts            | Codice pulito, automazione, modularità, riusabilità                      |
-| 2. Creatività della soluzione       | 20 pts            | Idee originali, approcci inediti, uso creativo di tool/LLM              |
-| 3. Completezza del dato             | 20 pts            | Aderenza allo schema, qualità e copertura dei dati                      |
-| 4. Efficacia dell’analisi di sentiment | 15 pts         | Accuratezza, rilevanza, originalità delle intuizioni                    |
-| 5. Output e comunicazione (report, grafici, doc) | 15 pts | Chiarezza, presentazione, comprensibilità per non esperti               |
-
 
 ## 🕒 Timeline
 
