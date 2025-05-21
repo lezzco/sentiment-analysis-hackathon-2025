@@ -13,7 +13,7 @@
     - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#bonus-estensione-llm-based---generatione-automatica-dei-report)
 - [📦 Cosa Consegnare](#cosa-consegnare)
 - [📜 Metriche di Valutazione e Punteggi](#-metriche-di-valutazione-e-punteggi)
-- [1️⃣ Inizializzazione progetto](#1-inizializzazione-progetto)
+- [1️⃣ Inizializzazione progetto](#inizializzazione-progetto-)
 - [🕒 Timeline](#-timeline)
 
 ---
@@ -129,30 +129,47 @@ Lista degli artefatti da consegnare:
 - Dataset generato dall’ingestion (**)
 - Report PDF con risultati analisi del sentiment dell’evento (inclusi eventuali grafici Bonus) all’interno della repository GitHub sotto la folder reports
 
- 📥 **Consegna dei dataset post-ingestion**
-
-Se il dataset finale supera i limiti di GitHub (es. >80MB per file o >1GB totali) sarà necessario utilizzare il link che vi verrò passato **privatavamente** al quale caricare il file.
+****Consegna del dataset post-ingestion**: Se il dataset finale supera i limiti di GitHub (es. >80MB per file o >1GB totali) sarà necessario utilizzare il link che vi verrò passato **privatavamente** al quale caricare il file.
 
 ---
 
-## 1️⃣ Inizializzazione progetto
+## Inizializzazione progetto 1️⃣ 
 
 Ogni team deve creare una propria repository GitHub a partire da un template ufficiale fornito dall’organizzazione. Tutti i team lavoreranno sulla stessa struttura di base per garantire ordine, coerenza e facilità di valutazione.
 
-### 🚀 Come iniziare
+### 🚀 Istruzioni per iniziare con il template
 
-Installare copier (solo la prima volta):
+Per partecipare all’hackathon, ogni team deve prima creare una propria repository su GitHub partendo dal template ufficiale, segui questi passaggi per iniziare a lavorare:
 
-```bash
-pip install copier
-```
+1. **Creare la repository personale su GitHub**
 
+   Crea una nuova repository pubblica su un profilo GitHub di riferimento per il team, clona la tua nuova repository in locale e posizionati nella root di progetto.
+   
+2. **Installare copier**
 
+    copier è lo strumento che ti permette di generare la struttura di progetto dal template. Va quindi installato usando pip:
 
+      ```bash
+   pip install copier
+      ```
+3. **Importare il template**
+
+    All’interno della cartella del progetto (dove hai clonato la repo), esegui il seguente comando:
+
+    ```bash
+    copier copy gh:lezzco/sentiment-analysis-hackathon-2025 .
+    ```
+
+**Adesso avete questo template sulla vostra repository e potete iniziare!**
+
+---
 
 ## 📜 Metriche di Valutazione e Punteggi
 
-La vostra soluzione verrà valutata secondo cinque macro-criteri. Ogni aspetto tiene conto non solo della qualità tecnica, ma anche della creatività, dell’efficacia dell’analisi e della chiarezza nella comunicazione dei risultati. Di seguito la griglia di valutazione dettagliata:
+Passiamo alla valutazione della vostra soluzione che avverrà attraverso cinque macro-criteri. 
+
+Ogni aspetto tiene conto non solo della qualità tecnica, ma anche della creatività, dell’efficacia dell’analisi e della chiarezza nella comunicazione dei risultati. 
+Di seguito la griglia di valutazione dettagliata, il punteggio massimo raggiungibile è di **100**:
 
 | Macro-metrica                        | Punteggio massimo | Dettaglio                                                                 |
 |-------------------------------------|-------------------|--------------------------------------------------------------------------|
