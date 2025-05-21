@@ -1,14 +1,13 @@
-_min_copier_version: "7.0"
+_copier_min_version: "7.0"
 
 team_name:
   type: str
-  help: "Inserisci il nome del tuo team"
-  default: "team-name-anonymous"
+  help: "Nome del team (es. astro-coders)"
 
 project_name:
   type: str
-  help: "Nome del progetto"
-  default: "lezzco-{{ team_name }}-hackathon"
+  default: "hackathon-sentiment-{{ team_name }}-2025"
+  when: false  # Nasconde il prompt, viene calcolato automaticamente
 
 author:
   type: str
