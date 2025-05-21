@@ -1,0 +1,20 @@
+_copier_min_version: "7.0"
+
+team_name:
+  type: str
+  help: "Nome del team (es. astro-coders)"
+
+project_name:
+  type: str
+  default: "hackathon-sentiment-{{ team_name }}-2025"
+  when: false  # Nasconde il prompt, viene calcolato automaticamente
+
+author:
+  type: str
+  help: "Nome o nick del team leader"
+  default: "leader-anonymous-group"
+
+use_venv:
+  type: bool
+  help: "Vuoi usare un virtual environment Python?"
+  default: true
