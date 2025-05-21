@@ -142,7 +142,7 @@ Di seguito la griglia di valutazione dettagliata, il punteggio massimo raggiungi
 
 | Macro-metrica                        | Punteggio massimo | Dettaglio                                                                 |
 |-------------------------------------|-------------------|--------------------------------------------------------------------------|
-| 1. Qualità della soluzione          | 30 pts            | Codice pulito, automazione, modularità, riusabilità                      |
+| 1. Qualità della soluzione          | 30 pts            | Codice pulito e documentato, automazione, modularità, riusabilità                      |
 | 2. Creatività della soluzione       | 20 pts            | Idee originali, approcci inediti, uso creativo di tool/LLM              |
 | 3. Completezza del dato             | 20 pts            | Aderenza allo schema, qualità e copertura dei dati                      |
 | 4. Efficacia dell’analisi di sentiment | 15 pts         | Accuratezza, rilevanza, originalità delle intuizioni                    |
