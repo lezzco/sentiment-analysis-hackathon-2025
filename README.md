@@ -7,7 +7,7 @@
 
 - [🏁 Obiettivo](#-obiettivo)
 - [📥 Fase 1 — Data Ingestion and Dataset Building](#-fase-1---data-ingestion-and-dataset-building)
-    - [1.1 Schema dataset finale](#1-.-1-schema-dataset-finale)
+    - [📇 Schema dataset finale](#-schema-dataset-finale)
 - [📥 Fase 2 — Sentiment Analysis](#-fase-2---sentiment-analysis)
     - [🎯 Obiettivo della parte di Sentiment Analysis](#-obiettivo-della-parte-di-sentiment-analysis)
     - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#-bonus-estensione-llm-based---generatione-automatica-dei-report)
@@ -48,7 +48,7 @@ Progettare e implementare una pipeline di data ingestion che:
 
 ---
 
-### 1.1 Schema dataset finale:
+### 📇 Schema dataset finale:
 
 Di seguito lo schema che dovrà seguire il Dataset ottenuto a valle della prima fase.
 
