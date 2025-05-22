@@ -5,10 +5,10 @@
 ---
 ## Indice
 
-- [Obiettivo 🏁](#-obiettivo)
-- [📥 Fase 1 — Data Ingestion and Dataset Building](#fase-1---data-ingestion-and-dataset-building)
+- [🏁 Obiettivo](#-obiettivo)
+- [📥 Fase 1 — Data Ingestion and Dataset Building](#-fase-1---data-ingestion-and-dataset-building)
     - [1.1 Schema dataset finale](#1-.-1-schema-dataset-finale)
-- [📥 Fase 2 — Sentiment Analysis](#fase-2---sentiment-analysis)
+- [📥 Fase 2 — Sentiment Analysis](#-fase-2---sentiment-analysis)
     - [🎯 Obiettivo della parte di Sentiment Analysis](#-obiettivo-della-parte-di-sentiment-analysis)
     - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#-bonus-estensione-llm-based---generatione-automatica-dei-report)
 - [📦 Modalità di consegna](#-modalità-di-consegna)
@@ -20,9 +20,9 @@
 
 ## 🏁 Obiettivo 
 
-In occasione del Gran Premio di Monaco 2025, uno degli eventi più iconici e seguiti della Formula 1, il vostro compito è progettare e realizzare un sistema intelligente che recupera, integra e analizza post e commenti provenienti dai social media, per comprendere come gli utenti vivono l’evento prima, durante e dopo la gara, con un focus particolare sul sentiment e sulla geolocalizzazione.
+In occasione del Gran Premio di Monaco 2025, uno degli eventi più iconici e seguiti della Formula 1, il vostro compito è progettare e realizzare un sistema intelligente che recupera, integra e analizza post e commenti provenienti dai social media, per comprendere come gli utenti vivono l’evento prima, durante e dopo la gara.
 
-L'obiettivo è cogliere le emozioni, le opinioni e le reazioni degli appassionati di motori sparsi in tutto il mondo, offrendo un quadro dinamico e aggiornato in tempo reale su come il pubblico percepisce i piloti, le scuderie, i momenti salienti e gli episodi controversi della gara.
+L'obiettivo è cogliere le emozioni, le opinioni e le reazioni degli appassionati di motori sparsi in tutto il mondo, offrendo un quadro dinamico e aggiornato in tempo reale su come il pubblico percepisce i piloti, le scuderie, i momenti salienti e gli episodi controversi della gara. Sarà anche importante profilare il tipo di spettatori e/o di appassionati dell'evento estraendo caratteristiche comuni a gruppi di utenti simili.
 
 Questa sfida ha due anime principali:
 
@@ -32,7 +32,7 @@ Questa sfida ha due anime principali:
 ---
 
 
-## Fase 1 - Data Ingestion and Dataset Building
+## 📥 Fase 1 - Data Ingestion and Dataset Building
 
 Progettare e implementare una pipeline di data ingestion che:
 
@@ -49,6 +49,8 @@ Progettare e implementare una pipeline di data ingestion che:
 ---
 
 ### 1.1 Schema dataset finale:
+
+Di seguito lo schema che dovrà seguire il Dataset ottenuto a valle della prima fase.
 
 | Feature           | Descrizione                                                                 | Datatype             | Nullable | Note                                        | Esempio                  |
 |-------------------|-----------------------------------------------------------------------------|----------------------|----------|---------------------------------------------|--------------------------|
@@ -71,19 +73,19 @@ Progettare e implementare una pipeline di data ingestion che:
 
 ---
 
-## Fase 2 - Sentiment Analysis
+## 📥 Fase 2 - Sentiment Analysis
 
 Una volta creato un dataset coerente, la sfida si sposta sull'analisi del sentiment. Ecco cosa includere, come strutturare la consegna e cosa valutare.
 
 ### 🎯 Obiettivo della parte di Sentiment Analysis
 
-Analizzare i contenuti raccolti (post/commenti) per comprendere come evolve l’umore e la percezione degli utenti nel tempo e nello spazio in relazione al Gran Premio di Monaco 2025, con un focus sulle fasi prima, durante e dopo la gara.
+Analizzare i contenuti raccolti (post/commenti) per comprendere come evolve l’umore e la percezione degli utenti nel tempo e nello spazio in relazione al Gran Premio di Monaco 2025, con un focus sulle fasi prima, durante e dopo la gara. Oltretutto raccogliendo le informazioni degli utenti sarà possibile anche definirne i profili e le caratteristiche comuni.
 
-L’analisi può mettere in luce emozioni, attese, reazioni e controversie legate ai piloti, ai team e possibili correlazioni con gli eventi chiave della gara.
+L’analisi può mettere in luce emozioni, attese, reazioni e controversie legate ai piloti, ai team e possibili correlazioni con gli eventi chiave della gara. 
 
 ---
 
-### ⚙️ Approcci suggeriti
+#### ⚙️ Approcci suggeriti
 
 #### 1. Approccio classico (NLP tradizionale)
 
@@ -110,6 +112,8 @@ Oltre alla classificazione del sentiment, è incoraggiato l’uso di LLM e model
 
 - 📊 Generare automaticamente grafici o visualizzazioni dai dati analizzati  
 - 🧠 Riassumere in linguaggio naturale i risultati (es. "Nei commenti dalla Francia, il sentiment era positivo prima della gara, ma è calato dopo l’incidente al 35° giro")  
+
+Insomma, la generazione del report finale potrebbe essere eseguita da modelli di Generative AI.
 
 Esempi di strumenti/approcci:  
 - GPT-4-Vision, Gemini, Claude 3 per generare visualizzazioni via prompt  
@@ -156,11 +160,11 @@ Ogni team deve creare una propria repository GitHub a partire da un template uff
 
 ### 🚀 Istruzioni per iniziare con il template
 
-Per partecipare all’hackathon, ogni team deve prima creare una propria repository su GitHub partendo dal template ufficiale, segui questi passaggi per iniziare a lavorare:
+Per partecipare all’hackathon, ogni team dovrà creare repository su GitHub a cui sarà adattato il template della competizione, segui questi passaggi per iniziare a lavorare:
 
 1. **Creare la repository personale su GitHub**
 
-   Crea una nuova repository pubblica su un profilo GitHub di riferimento per il team, clona la tua nuova repository in locale e posizionati nella root di progetto.
+   Crea una nuova repository pubblica su un profilo GitHub di riferimento per il team, quindi clona la tua nuova repository in locale e posizionati nella root della stessa.
    
 2. **Installare copier**
 
@@ -176,7 +180,8 @@ Per partecipare all’hackathon, ogni team deve prima creare una propria reposit
     ```bash
     copier copy gh:lezzco/sentiment-analysis-hackathon-2025 .
     ```
-
+    Una volta completato avrete il template installato, nelle varie folder esistono dei README.md che vi aiuterrano ad orientarvi (se questa guida principale vi sembra troppo confusionaria)
+   
 **Adesso avete questo template sulla vostra repository e potete iniziare!**
 
 ---
