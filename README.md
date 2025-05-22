@@ -129,7 +129,7 @@ Esempi di strumenti/approcci:
 
 Lista degli artefatti da consegnare:
 
-- Codice sorgente su Repository GitHub (link da condividere con gli organizzatori prima della scadenza)
+- Codice sorgente su Repository GitHub + pacchetti necessari (file requirements.txt) + eventuale Documentazione tecnica (link da condividere con gli organizzatori prima della scadenza)
 - Dataset generato dall’ingestion (**)
 - Report PDF con risultati analisi del sentiment dell’evento (inclusi eventuali grafici Bonus) all’interno della repository GitHub sotto la folder reports
 
