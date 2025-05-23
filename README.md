@@ -8,8 +8,8 @@
 - [🏁 Obiettivo](#-obiettivo)
 - [📥 Fase 1 — Data Ingestion and Dataset Building](#-fase-1---data-ingestion-and-dataset-building)
     - [📇 Schema dataset finale](#-schema-dataset-finale)
-- [📥 Fase 2 — Sentiment Analysis](#-fase-2---sentiment-analysis)
-    - [🎯 Obiettivo della parte di Sentiment Analysis](#-obiettivo-della-parte-di-sentiment-analysis)
+- [📥 Fase 2 — Social Analysis](#-fase-2---social-analysis)
+    - [🎯 Obiettivo della parte di social Analysis](#-obiettivo-della-parte-di-social-analysis)
     - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#-bonus-estensione-llm-based---generatione-automatica-dei-report)
 - [📦 Modalità di consegna](#-modalità-di-consegna)
 - [📜 Metriche di Valutazione e Punteggi](#-metriche-di-valutazione-e-punteggi)
@@ -27,7 +27,7 @@ L'obiettivo è cogliere le emozioni, le opinioni e le reazioni degli appassionat
 Questa sfida ha due anime principali:
 
 - **Data ingestion & dataset building (fondamentale!)**
-- **Sentiment analysis avanzata (con o senza LLM)**
+- **Social analysis avanzata (con o senza LLM)**
 
 ---
 
@@ -36,15 +36,15 @@ Questa sfida ha due anime principali:
 
 Progettare e implementare una pipeline di data ingestion che:
 
-- 🔍 Recupera in modo automatico (o semi-automatico) contenuti testuali da diversi social media (es. Instagram, Facebook, Twitter/X, Reddit, YouTube…).
+- 🔍 Recupera in modo automatico (o semi-automatico) contenuti testuali da diversi social media: Instagram, Facebook, Twitter/X, Reddit, YouTube (ma anche altri non in lista che pensate possano essere significativi). (Le analisi cross-platform sono ben gradite 🤗)
 
 - 🧹 Pulisce, filtra e normalizza i dati testuali, le interazioni e i metadati.
 
 - 📦 Produce un dataset finale conforme a uno schema comune condiviso da tutti i gruppi (vedi sotto).
 
-### 🗒️ NOTE:
-- _Non devono essere inclusi dati personali identificabili_ 
-- _Non violare i ToS dei social: scraping etico o dataset già disponibili_
+
+📜 NOTA
+- _Il linguaggio ufficiale è l'Inglese ovviamente, ma i più coraggiosi possono provare a fare analisi multilingua (gestendo anche il Francese ad esempio)_
 
 ---
 
@@ -71,17 +71,22 @@ Di seguito lo schema che dovrà seguire il Dataset ottenuto a valle della prima 
 | bookmark_count    | Numero di salvataggi (se disponibile)                                     | Intero               | No       | Default 0, non può essere negativo          | 0                        |
 | content_type      | Tipo di contenuto analizzato                                               | stringa              | No       | Valore categorico: "post" o "commento"      | post                     |
 
+
+📜 NOTA
+_E' importante che tutti i dataset rispettino la convenzione riportata sopra, i dataset che non rispettano lo schema saranno penalizzati in fase di valutazione_
+
 ---
 
-## 📥 Fase 2 - Sentiment Analysis
+## 📥 Fase 2 - social Analysis
 
-Una volta creato un dataset coerente, la sfida si sposta sull'analisi del sentiment. Ecco cosa includere, come strutturare la consegna e cosa valutare.
+Una volta creato un dataset coerente, la sfida si sposta sull'analisi dei risultati. Ecco cosa includere, come strutturare la consegna e cosa valutare.
 
-### 🎯 Obiettivo della parte di Sentiment Analysis
+### 🎯 Obiettivo della Social Analysis
 
 Analizzare i contenuti raccolti (post/commenti) per comprendere come evolve l’umore e la percezione degli utenti nel tempo e nello spazio in relazione al Gran Premio di Monaco 2025, con un focus sulle fasi prima, durante e dopo la gara. Oltretutto raccogliendo le informazioni degli utenti sarà possibile anche definirne i profili e le caratteristiche comuni.
 
-L’analisi può mettere in luce emozioni, attese, reazioni e controversie legate ai piloti, ai team e possibili correlazioni con gli eventi chiave della gara. 
+L’analisi può mettere in luce emozioni, attese, reazioni e controversie legate ai piloti, ai team e possibili correlazioni con gli eventi chiave della gara. Sono quindi suggerite tecniche di Sentiment Analysis,
+Emotion analysis, hate speech recognition, ma anche virality pattern recognmition, misinformation detection etc.
 
 ---
 
@@ -104,11 +109,23 @@ Sfruttare modelli linguistici di nuova generazione (GPT, LLaMA, Claude, Mistral,
 
 Questi modelli possono essere interrogati tramite prompt ben costruiti per analisi dettagliate su testi brevi, rumorosi o ambigui.
 
+### Alcuni riferimenti utili:
+
+- Emotion recognition
+⁠https://huggingface.co/SamLowe/roberta-base-go_emotions
+⁠⁠https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
+
+- Hate Speech Recognition
+https://huggingface.co/facebook/roberta-hate-speech-dynabench-r4-target
+
+- Sentiment
+https://huggingface.co/tabularisai/multilingual-sentiment-analysis
+
 ---
 
 ### ✨ Bonus: Estensione LLM-based - Generatione automatica dei report
 
-Oltre alla classificazione del sentiment, è incoraggiato l’uso di LLM e modelli multimodali per:  
+Oltre alla social analysis, è incoraggiato l’uso di LLM e modelli multimodali per:  
 
 - 📊 Generare automaticamente grafici o visualizzazioni dai dati analizzati  
 - 🧠 Riassumere in linguaggio naturale i risultati (es. "Nei commenti dalla Francia, il sentiment era positivo prima della gara, ma è calato dopo l’incidente al 35° giro")  
@@ -131,7 +148,7 @@ Lista degli artefatti da consegnare:
 
 - Codice sorgente su Repository GitHub + pacchetti necessari (file requirements.txt) + eventuale Documentazione tecnica (link da condividere con gli organizzatori prima della scadenza)
 - Dataset generato dall’ingestion (**)
-- Report PDF con risultati analisi del sentiment dell’evento (inclusi eventuali grafici Bonus) all’interno della repository GitHub sotto la folder reports
+- Documento PDF, Presentazione Powerpoint o qualsiasi altro formato con risultati analisi dell’evento (inclusi eventuali grafici Bonus) all’interno della repository GitHub sotto la folder reports
 
 ****Consegna del dataset post-ingestion**: Se il dataset finale supera i limiti di GitHub (es. >80MB per file o >1GB totali) sarà necessario utilizzare il link che vi verrò passato **privatavamente** al quale caricare il file.
 
@@ -185,7 +202,10 @@ Per partecipare all’hackathon, ogni team dovrà creare repository su GitHub a 
 **Adesso avete questo template sulla vostra repository e potete iniziare!**
 
 ---
-
+## Altre Info:
+- I gruppi dovranno essere composti da almeno 2 persone e massimo 4 persone;
+- Il premio finale per il gruppo vincitore sarà un buono Amazon dal valore di 400 euro.
+  
 ## 🕒 Timeline
 
 | Evento                            | Data e Ora                      |
