@@ -9,7 +9,7 @@
 - [📥 Fase 1 — Data Ingestion and Dataset Building](#-fase-1---data-ingestion-and-dataset-building)
     - [📇 Schema dataset finale](#-schema-dataset-finale)
 - [📥 Fase 2 — Social Analysis](#-fase-2---social-analysis)
-    - [🎯 Obiettivo della parte di social Analysis](#-obiettivo-della-parte-di-social-analysis)
+    - [🎯 Obiettivo della parte di Social Analysis](#-obiettivo-della-parte-di-social-analysis)
     - [✨ Bonus: Estensione LLM-based - Creazione automatica dei report](#-bonus-estensione-llm-based---generatione-automatica-dei-report)
 - [📦 Modalità di consegna](#-modalità-di-consegna)
 - [📜 Metriche di Valutazione e Punteggi](#-metriche-di-valutazione-e-punteggi)
@@ -77,7 +77,7 @@ _E' importante che tutti i dataset rispettino la convenzione riportata sopra, i 
 
 ---
 
-## 📥 Fase 2 - social Analysis
+## 📥 Fase 2 - Social Analysis
 
 Una volta creato un dataset coerente, la sfida si sposta sull'analisi dei risultati. Ecco cosa includere, come strutturare la consegna e cosa valutare.
 
@@ -86,7 +86,7 @@ Una volta creato un dataset coerente, la sfida si sposta sull'analisi dei risult
 Analizzare i contenuti raccolti (post/commenti) per comprendere come evolve l’umore e la percezione degli utenti nel tempo e nello spazio in relazione al Gran Premio di Monaco 2025, con un focus sulle fasi prima, durante e dopo la gara. Oltretutto raccogliendo le informazioni degli utenti sarà possibile anche definirne i profili e le caratteristiche comuni.
 
 L’analisi può mettere in luce emozioni, attese, reazioni e controversie legate ai piloti, ai team e possibili correlazioni con gli eventi chiave della gara. Sono quindi suggerite tecniche di Sentiment Analysis,
-Emotion analysis, hate speech recognition, ma anche virality pattern recognmition, misinformation detection etc.
+Emotion Analysis, hate speech recognition, ma anche virality pattern recognition, misinformation detection etc.
 
 ---
 
